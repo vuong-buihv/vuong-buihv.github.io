@@ -406,7 +406,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-bottom: -3em;
+  margin-top: -3em;
 }
 .Iam p {
   height: 2.5em;
