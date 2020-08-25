@@ -1,6 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
 
 
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 0.6rem;
+  }
+
+  .one{left:50px; top: 0px;}
+  .two{left: 0px; top: 50px;}
+  .three{left: 100px; top: 50px;}
+  .four{left: 50px; top: 100px;}
+
+  .oneb{left: 0px; top: 0px;}
+  .twob{left: 160px; top: 0px;}
+  .threeb{left: 0px; top: 160px;}
+  .fourb{left: 160px; top: 160px;}
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  html {
+    font-size: 0.8rem;
+  }
+
+  .one{left:80px; top: 0px;}
+  .two{left: 0px; top: 80px;}
+  .three{left: 160px; top: 80px;}
+  .four{left: 80px; top: 160px;}
+
+  .oneb{left: 5px; top: 5px;}
+  .twob{left: 210px; top: 5px;}
+  .threeb{left: 5px; top: 210px;}
+  .fourb{left: 210px; top: 210px;}
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  html {
+    font-size: 1rem;
+  }
+
+  .one{left:110px; top: 0px;}
+  .two{left: 0px; top: 110px;}
+  .three{left: 220px; top: 110px;}
+  .four{left: 110px; top: 220px;}
+
+  .oneb{left: 5px; top: 5px;}
+  .twob{left: 280px; top: 5px;}
+  .threeb{left: 5px; top: 280px;}
+  .fourb{left: 280px; top: 280px;}
+}
+
+
 body, html{
   width:100%;
   height:100%;
@@ -20,7 +72,7 @@ app-root {
   z-index: 1;
   position: relative;
   overflow: hidden;
-  padding: 0 13px;
+  padding: 0 0.0048em;
   flex-direction: column;
   display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
   align-items: center;
@@ -31,32 +83,32 @@ app-root {
 .presentation {
   text-align: center;
   width: 80%;
-  margin: 5px;
+  margin: 0.3125em;
 }
 p {
-  font: normal 30px/40px Montserrat, sans-serif;
+  font: normal 1.875em/2.5em Montserrat, sans-serif;
   color: #2d2c2c;
 }
 
 
 .nav {
   position:fixed;
-  bottom: 40px;
+  bottom: 2.5em;
   z-index: 99999;
 }
 
 .nav a{
-  font-size: 30px;
+  font-size: 1.875em;
   color: #2d2c2c;
-  text-shadow: 2px 2px 3px #cfcfcf;
-  padding: 15px;
+  text-shadow: 0.125em 0.125em 0.1875em #cfcfcf;
+  padding: 0.9375em;
   text-decoration: none;
 }
 
 .card {
-  border-radius: 25px;
-  padding: 10px;
-  margin: 10px;
+  border-radius: 1.5625em;
+  padding: 0.625em;
+  margin: 0.625em;
   width: 65%;
   background: rgba(125,184,214, .5);
 }
@@ -77,9 +129,9 @@ p {
 h1 {
   font-family: 'Arima Madurai', cursive;
   color: black;
-  font-size: 4rem;
-  letter-spacing: -3px;
-  text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+  font-size: 4em;
+  letter-spacing: -0.1875em;
+  text-shadow: 0em 0.0625em 0.0625em rgba(255,255,255,0.6);
   position: relative;
   z-index: 3;
 }
@@ -89,8 +141,8 @@ h1 {
 .bird--one {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
   background-size: auto 100%;
-  width: 88px;
-  height: 125px;
+  width: 5.5em;
+  height: 7.8125em;
   will-change: background-position;
 
   animation-name: fly-cycle;
@@ -104,8 +156,8 @@ h1 {
 .bird--two {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
   background-size: auto 100%;
-  width: 88px;
-  height: 125px;
+  width: 5.5em;
+  height: 7.8125em;
   will-change: background-position;
 
   animation-name: fly-cycle;
@@ -123,8 +175,8 @@ h1 {
 .bird--three {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
   background-size: auto 100%;
-  width: 88px;
-  height: 125px;
+  width: 5.5em;
+  height: 7.8125em;
   will-change: background-position;
 
   animation-name: fly-cycle;
@@ -142,8 +194,8 @@ h1 {
 .bird--four {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
   background-size: auto 100%;
-  width: 88px;
-  height: 125px;
+  width: 5.5em;
+  height: 7.8125em;
   will-change: background-position;
 
   animation-name: fly-cycle;
@@ -231,7 +283,7 @@ h1 {
 @keyframes fly-cycle {
 
   100% {
-    background-position: -900px 0;
+    background-position: -56.25em 0;
   }
 
 }
@@ -347,7 +399,7 @@ h1 {
   width: 80%;
 
   padding: 0.5em 1em;
-  font: normal 30px/40px Montserrat, sans-serif;
+  font: normal 1.875em/2.5em Montserrat, sans-serif;
   color: #2d2c2c;
 
   display: flex;
@@ -356,7 +408,7 @@ h1 {
 
 }
 .Iam p {
-  height: 40px;
+  height: 2.5em;
   float: left;
   margin-right: 0.3em;
 }
@@ -364,8 +416,8 @@ h1 {
   float: left;
   overflow: hidden;
   position: relative;
-  height: 40px;
-  top: -7px;
+  height: 2.5em;
+  top: -0.4375em;
 }
 .Iam .innerIam {
   display: inline-block;
@@ -397,25 +449,25 @@ h1 {
   animation-delay:0.5s;
 }
 @keyframes move{
-  0%  { top: 0px; }
-  50% { top: -50px; }
+  0%  { top: 0em; }
+  50% { top: -3.125em; }
 }
 
 @-webkit-keyframes move {
-  0%  { top: 0px; }
-  50% { top: -50px; }
+  0%  { top: 0em; }
+  50% { top: -3.125em; }
 }
 @-moz-keyframes move {
-  0%  { top: 0px; }
-  50% { top: -50px; }
+  0%  { top: 0em; }
+  50% { top: -3.125em; }
 }
 @-o-keyframes move {
-  0%  { top: 0px; }
-  50% { top: -50px; }
+  0%  { top: 0em; }
+  50% { top: -3.125em; }
 }
 @keyframes move {
-  0%  { top: 0px; }
-  50% { top: -50px; }
+  0%  { top: 0em; }
+  50% { top: -3.125em; }
 }
 
 
@@ -449,8 +501,8 @@ h1 {
   margin: 0 auto;
 }
 .background-circle{
-  width: 400px;
-  height: 400px;
+  width: 25em;
+  height: 25em;
   border-radius: 100%;
   overflow: hidden;
   margin: 0 auto;
@@ -465,15 +517,15 @@ h1 {
   transform-origin: center;
 }
 .border-circle{
-  width: 399px;
-  height: 399px;
+  width: 24.9375em;
+  height: 24.9375em;
   border-radius: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -220px;
-  margin-top: -220px;
-  border: 10px solid #FCB040;
+  margin-left: -13.75em;
+  margin-top: -13.75em;
+  border: 0.625em solid #FCB040;
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transform-origin: center;
@@ -493,13 +545,13 @@ h1 {
 }
 
 .body{
-  width: 285px;
-  height: 600px;
+  width: 17.8125em;
+  height: 37.5em;
   margin: 0 auto;
   background: #222;
-  border-radius: 100px;
+  border-radius: 6.25em;
   position: relative;
-  top: 200px;
+  top: 12.5em;
   animation:body-enter 0.7s 0.2s 1 ease;
   animation-fill-mode: forwards;
   -webkit-animation:body-enter 0.7s 0.2s 1 ease;
@@ -509,15 +561,15 @@ h1 {
 }
 
 .head{
-  width: 196px;
-  height: 260px;
-  border-radius: 50px;
+  width: 12.25em;
+  height: 16.25em;
+  border-radius: 3.125em;
   #background: #FFE4BE;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -210px;
-  margin-left: -98px;
+  margin-top: -13.125em;
+  margin-left: -6.125em;
   animation:grow 0.7s 0.4s 1 ease, music-move 1s 3.3s infinite alternate ease-in-out;
   -webkit-animation:grow 0.7s 0.4s 1 ease, music-move 1s 3.3s infinite alternate ease-in-out;
   /*
@@ -539,18 +591,18 @@ h1 {
 
 
 .shadow-wrapper{
-  width: 98px;
-  height: 260px;
+  width: 6.125em;
+  height: 16.25em;
   position: absolute;
-  left: -8px;
-  bottom: -84px;
+  left: -0.5em;
+  bottom: -5.25em;
   z-index: 4;
   overflow: hidden;
 }
 .shadow{
-  width: 98px;
-  height: 260px;
-  border-radius: 50px;
+  width: 6.125em;
+  height: 16.25em;
+  border-radius: 3.125em;
   background: rgba(149,36,0,0.1);
   position: absolute;
   z-index: 4;
@@ -561,8 +613,8 @@ h1 {
   -webkit-animation-fill-mode: forwards;
 }
 .triangle-light{
-  width: 400px;
-  height: 600px;
+  width: 25em;
+  height: 37.5em;
   background: #FFFFFF;
   opacity: 0.2;
   position: absolute;
@@ -575,8 +627,8 @@ h1 {
   transform: translate(200px,0px);
 }
 .triangle-dark{
-  width: 400px;
-  height: 600px;
+  width: 25em;
+  height: 37.5em;
   background: #000000;
   opacity: 0.2;
   position: absolute;
@@ -596,10 +648,10 @@ h1 {
   font-weight: 700;
   color: white;
   position: relative;
-  top: -300px;
-  font-size: 50px;
+  top: -18.75em;
+  font-size: 3.125em;
   display: inline-block;
-  -webkit-text-stroke: 2px;
+  -webkit-text-stroke: 0.125em;
   -webkit-transform: translate(0px,100px);
   transform: translate(0px,100px);
   animation-fill-mode: forwards !important;
@@ -713,12 +765,12 @@ h1 {
 @keyframes hair-anim
 {
   0% {
-    height:0px;
+    height:0em;
     -webkit-transform: translateY(137px) translateZ(0);
     transform: translateY(137px) translateZ(0);
   }
   100% {
-    height: 137px;
+    height: 8.5625em;
     -webkit-transform: translateY(0px) translateZ(0);
     transform: translateY(0px) translateZ(0);
   }
@@ -727,12 +779,12 @@ h1 {
 @-webkit-keyframes hair-anim /* Safari and Chrome */
 {
   0% {
-    height:0px;
+    height:0em;
     -webkit-transform: translateY(137px) translateZ(0);
     transform: translateY(137px) translateZ(0);
   }
   100% {
-    height: 137px;
+    height: 8.5625em;
     -webkit-transform: translateY(0px) translateZ(0);
     transform: translateY(0px) translateZ(0);
   }
@@ -942,28 +994,28 @@ h1 {
 @keyframes eyebrow-raise
 {
   0% {
-    top:-35px;
+    top:-2.1875em;
   }
   80% {
-    top:-35px;
+    top:-2.1875em;
 
   }
   100% {
-    top:-45px;
+    top:-2.8125em;
   }
 }
 
 @-webkit-keyframes eyebrow-raise /* Safari and Chrome */
 {
   0% {
-    top:-35px;
+    top:-2.1875em;
   }
   80% {
-    top:-35px;
+    top:-2.1875em;
 
   }
   100% {
-    top:-45px;
+    top:-2.8125em;
   }
 }
 @keyframes eyebrow-anim-left
@@ -1009,22 +1061,22 @@ h1 {
   0% {
     -webkit-transform: scale(0) translateZ(0);
     transform: scale(0) translateZ(0);
-    border-width: 20px;
+    border-width: 1.25em;
   }
   40% {
     -webkit-transform: scale(1) translateZ(0);
     transform: scale(1) translateZ(0);
-    border-width: 20px;
-    margin-left: -220px;
-    margin-top: -220px;
+    border-width: 1.25em;
+    margin-left: -13.75em;
+    margin-top: -13.75em;
   }
   100% {
     -webkit-transform: scale(1.5) translateZ(0);
     transform: scale(1.5) translateZ(0);
-    border-width: 0px;
+    border-width: 0em;
     border-style: double;
-    margin-left: -200px;
-    margin-top: -200px;
+    margin-left: -12.5em;
+    margin-top: -12.5em;
   }
 }
 
@@ -1033,22 +1085,22 @@ h1 {
   0% {
     -webkit-transform: scale(0) translateZ(0);
     transform: scale(0) translateZ(0);
-    border-width: 20px;
+    border-width: 1.25em;
   }
   40% {
     -webkit-transform: scale(1) translateZ(0);
     transform: scale(1) translateZ(0);
-    border-width: 20px;
-    margin-left: -220px;
-    margin-top: -220px;
+    border-width: 1.25em;
+    margin-left: -13.75em;
+    margin-top: -13.75em;
   }
   100% {
     -webkit-transform: scale(1.5) translateZ(0);
     transform: scale(1.5) translateZ(0);
-    border-width: 0px;
+    border-width: 0em;
     border-style: double;
-    margin-left: -200px;
-    margin-top: -200px;
+    margin-left: -12.5em;
+    margin-top: -12.5em;
   }
 }
 @keyframes shadow-anim
@@ -1283,19 +1335,19 @@ h1 {
 
 
 #web {
-  width: 470px;
-  height: 470px;
+  width: 29.375em;
+  height: 29.375em;
   position: relative;
 
 }
 
 
 .sphere {
-  width: 250px;
-  height: 250px;
+  width: 15.625em;
+  height: 15.625em;
   border-radius: 50%;
   position: absolute;
-  border: 5px rgba(115,166,183,.5) solid;
+  border: 0.3125em rgba(115,166,183,.5) solid;
   transition: background-color 800ms ease-in-out;
   background: rgba(125,184,214, .4);
   transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms ;
@@ -1316,14 +1368,10 @@ h1 {
   -o-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  width: 250px;
-  height: 250px;
+  width: 15.625em;
+  height: 15.625em;
 }
 
-.one{left:110px; top: 0px;}
-.two{left: 0px; top: 110px;}
-.three{left: 220px; top: 110px;}
-.four{left: 110px; top: 220px;}
 
 .text {
   -webkit-transition: all 0.5s ease-in-out;
@@ -1332,32 +1380,32 @@ h1 {
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: relative;
-  top: 100px;
-  left: 0px;
+  top: 6.25em;
+  left: 0em;
 
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: normal;
   color: rgb(47, 49, 53);
   z-index: 999;
 }
 
 .sphere:hover .text {
-  top: 40px;
-  left: 0px;
+  top: 2.5em;
+  left: 0em;
 
   color: rgba(200,200,200,1);
 }
 
 
 .blurb {
-  margin: 30px;
+  margin: 1.875em;
   color: rgba(220,220,220,0);
   -ms-transform: scale(.9);
   -webkit-transform: scale(.9);
   transform: scale(.9);
   visibility: hidden;
 
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: normal;
 }
 
