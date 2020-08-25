@@ -4,7 +4,7 @@
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   html {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
   .one{left:50px; top: 0px;}
@@ -21,7 +21,7 @@
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   html {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 
   .one{left:80px; top: 0px;}
