@@ -3,7 +3,9 @@
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-
+  html {
+    font-size: 0.6rem;
+  }
 
   .one{left:50px; top: 0px;}
   .two{left: 0px; top: 50px;}
@@ -18,7 +20,9 @@
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-
+  html {
+    font-size: 0.8rem;
+  }
 
   .one{left:80px; top: 0px;}
   .two{left: 0px; top: 80px;}
@@ -33,9 +37,9 @@
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  /*html {
+  html {
     font-size: 1rem;
-  }*/
+  }
 
   .one{left:110px; top: 0px;}
   .two{left: 0px; top: 110px;}
