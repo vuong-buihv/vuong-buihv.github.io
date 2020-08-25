@@ -545,8 +545,8 @@ h1 {
 }
 
 .body{
-  width: 17.8125em;
-  height: 37.5em;
+  /*width: 17.8125em;
+  height: 37.5em;*/
   margin: 0 auto;
   background: #222;
   border-radius: 6.25em;
