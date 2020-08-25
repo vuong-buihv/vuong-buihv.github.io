@@ -4,7 +4,7 @@
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   html {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .one{left:50px; top: 0px;}
@@ -21,7 +21,7 @@
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   html {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 
   .one{left:80px; top: 0px;}
@@ -93,9 +93,9 @@ p {
 
 .nav {
   /*position:fixed;
-  bottom: 2.5em;
-  z-index: 99999;*/
-  margin: 2em;
+  bottom: 2.5em;*/
+  z-index: 99999;
+  margin: 4em;
 }
 
 .nav a{
